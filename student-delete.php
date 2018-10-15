@@ -7,4 +7,4 @@ if ($id){
 }
 
 // Trở về trang danh sách
-header("location: admin-index.php"); ?>
+header("location: student-list.php"); ?>
