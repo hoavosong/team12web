@@ -13,7 +13,6 @@
         <li><a href="index.html"><b>Trang Chủ</b></a></li>
         <li><a href="index.html"><b>Menu2</b></a></li>
         <li><a href="index.html"><b>Menu3</b></a></li>
-
       <li>
        <div id="info" style=" margin-left:1600px">
         <?php  if (isset($_SESSION['username'])) : ?>
@@ -22,8 +21,5 @@
         <?php endif ?>
       </div>
     </li>
-
-
-
       </ul>
   </div>
