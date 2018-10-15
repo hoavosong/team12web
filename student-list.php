@@ -14,7 +14,7 @@ disconnect_db();
             <tr>
                 <td style="color:red"><strong>ID</strong></td>
                 <td style="color:red"><strong>Họ Và Tên</strong></td>
-                <td style="color:red"<strong>Giới Tính</strong></td>
+                <td style="color:red"><strong>Giới Tính</strong></td>
                 <td style="color:red"><strong>Ngày Sinh</strong></td>
                 <td style="color:red"><strong>Tùy Chọn</strong></td>
             </tr>
