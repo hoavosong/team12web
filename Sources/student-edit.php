@@ -46,42 +46,50 @@ disconnect_db();
 <title>Sửa Sinh Viên - 58HT</title>
 <?php include_once 'admin-header.php'; ?>
 
-        <center><h1 style="font-size:35pt;color:red">Sửa sinh viên </h1></center>
-        <div style="margin-left:30%">
-        <a href="student-list.php" style="font-size:20pt">Trở về</a> <br/> <br/>
-        <form method="post" action="student-edit.php?id=<?php echo $data['sv_id']; ?>">
-            <table width="50%" border="1" cellspacing="0" cellpadding="10">
-                <tr>
-                    <td style="height:50px;color:rgb(238, 19, 65)"><strong><center>Họ Và Tên</center></strong></td>
-                    <td>
-                        <input style="height:50px;width:100%" type="text" name="name" value="<?php echo $data['sv_name']; ?>"/>
-                        <?php if (!empty($errors['sv_name'])) echo $errors['sv_name']; ?>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="height:50px;color:rgb(238, 19, 65)"><strong><center>Giới Tính</center></strong></td>
-                    <td>
-                        <select name="sex">
-                            <option value="Nam">Nam</option>
-                            <option value="Nữ" <?php if ($data['sv_sex'] == 'Nữ') echo 'selected'; ?>>Nữ</option>
-                        </select>
-                        <?php if (!empty($errors['sv_sex'])) echo $errors['sv_sex']; ?>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="height:50px;color:rgb(238, 19, 65)"><strong><center>Ngày Sinh</center></strong></td>
-                    <td>
-                        <input  style="height:50px;width:100%" type="text" name="birthday" value="<?php echo $data['sv_birthday']; ?>"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <input type="hidden" name="id" value="<?php echo $data['sv_id']; ?>"/>
-                        <input style="height:50px;width:100%" type="submit" name="edit_student" value="Lưu"/>
-                    </td>
-                </tr>
-            </table>
-        </form>
-      </div>
+<center>
+  <h1 style="font-size:35pt;color:red">Sửa sinh viên </h1>
+</center>
+<div style="margin-left:30%">
+  <a href="student-list.php" style="font-size:20pt">Trở về</a> <br /> <br />
+  <form method="post" action="student-edit.php?id=<?php echo $data['sv_id']; ?>">
+    <table width="50%" border="1" cellspacing="0" cellpadding="10">
+      <tr>
+        <td style="height:50px;color:rgb(238, 19, 65)"><strong>
+            <center>Họ Và Tên</center>
+          </strong></td>
+        <td>
+          <input style="height:50px;width:100%" type="text" name="name" value="<?php echo $data['sv_name']; ?>" />
+          <?php if (!empty($errors['sv_name'])) echo $errors['sv_name']; ?>
+        </td>
+      </tr>
+      <tr>
+        <td style="height:50px;color:rgb(238, 19, 65)"><strong>
+            <center>Giới Tính</center>
+          </strong></td>
+        <td>
+          <select name="sex">
+            <option value="Nam">Nam</option>
+            <option value="Nữ" <?php if ($data['sv_sex']=='Nữ' ) echo 'selected' ; ?>>Nữ</option>
+          </select>
+          <?php if (!empty($errors['sv_sex'])) echo $errors['sv_sex']; ?>
+        </td>
+      </tr>
+      <tr>
+        <td style="height:50px;color:rgb(238, 19, 65)"><strong>
+            <center>Ngày Sinh</center>
+          </strong></td>
+        <td>
+          <input style="height:50px;width:100%" type="text" name="birthday" value="<?php echo $data['sv_birthday']; ?>" />
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="hidden" name="id" value="<?php echo $data['sv_id']; ?>" />
+          <input style="height:50px;width:100%" type="submit" name="edit_student" value="Lưu" />
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
 <?php include_once 'admin-footer.php'; ?>

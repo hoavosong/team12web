@@ -6,7 +6,6 @@
     <h1 style="font-size:35pt;color:red">Thêm khóa học</h1>
   </center>
 </strong>
-
 <form class="modal-content" action="admin-index.php">
   <div class="container" style="margin-left:30%">
     </br>
@@ -31,7 +30,7 @@
     </br>
     </br>
     <div class="clearfix">
-      <button type="submit" class="signupbtn" style="margin-left:20%;width:20%;height:5%;background:rgb(167, 116, 212)"  href="admin-index.php"><strong><b style="font-size:15pt">Hoàn Tất</b></strong></button>
+      <button type="submit" class="signupbtn" style="margin-left:20%;width:20%;height:5%;background:rgb(167, 116, 212)" href="admin-index.php"><strong><b style="font-size:15pt">Hoàn Tất</b></strong></button>
     </div>
   </div>
   </br>

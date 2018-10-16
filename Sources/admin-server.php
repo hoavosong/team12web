@@ -20,7 +20,6 @@ function connect_db()
     }
 }
 
-
 // REGISTER USER
 if (isset($_POST['admin_reg_user'])) {
   // receive all input values from the form
