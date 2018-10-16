@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 15, 2018 lúc 02:47 PM
+-- Thời gian đã tạo: Th10 16, 2018 lúc 12:46 PM
 -- Phiên bản máy phục vụ: 10.1.35-MariaDB
 -- Phiên bản PHP: 7.2.9
 
@@ -52,8 +52,19 @@ CREATE TABLE `thongtin_sinhvien` (
   `sv_id` int(11) NOT NULL,
   `sv_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `sv_sex` varchar(5) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `sv_birthday` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL
+  `sv_birthday` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `sv_diem1` int(11) NOT NULL,
+  `sv_diem2` int(11) NOT NULL,
+  `sv_diemtong` int(11) NOT NULL,
+  `sv_xeploai` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `thongtin_sinhvien`
+--
+
+INSERT INTO `thongtin_sinhvien` (`sv_id`, `sv_name`, `sv_sex`, `sv_birthday`, `sv_diem1`, `sv_diem2`, `sv_diemtong`, `sv_xeploai`) VALUES
+(2, 'Hỏa Vô Song', 'Nam', '7/7/1998', 10, 10, 10, 'Giỏi');
 
 -- --------------------------------------------------------
 
@@ -114,7 +125,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT cho bảng `thongtin_sinhvien`
 --
 ALTER TABLE `thongtin_sinhvien`
-  MODIFY `sv_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `sv_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT cho bảng `users`
