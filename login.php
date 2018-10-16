@@ -13,7 +13,7 @@
       	<?php include('errors.php'); ?>
         <center><h1 style="font-size:35pt;color:rgb(38, 177, 228)"> <b>***Chào Mừng Tới Với Website***</b></h1></center>
         <center><h1 style="color:rgba(208, 33, 33, 0.78)"> Bạn Cần Đăng Nhập Để Tiếp Tục Truy Cập</h1></center>
-    <div style="margin-top:100px ; margin-left:750px" >
+    <div style="margin-top:100px ; margin-left:700px" >
       	<div class="input-group" style="height:100px">
       		<label style="font-size:15pt"><strong>Tài Khoản :</strong></label>
       		<input type="text" name="username" style="height:35px;width:300px ;font-size:15px" placeholder="Nhập tài khoản">
