@@ -139,6 +139,41 @@ function edit_student($student_id, $student_name, $student_sex, $student_birthda
 
     return $query;
 }
+// Hàm sửa thông tin thống kê của sinh viên
+function edit_student_statistics($student_id, $student_name, $student_sex, $student_birthday,$student_diem1 , $student_diem2 ,$student_diemtong ,$student_xeploai )
+{
+    // Gọi tới biến toàn cục $conn
+    global $conn;
+
+    // Hàm kết nối
+    connect_db();
+
+    // Chống SQL Injection
+    $student_name  = addslashes($student_name);
+    $student_sex   = addslashes($student_sex);
+    $student_birthday  = addslashes($student_birthday);
+    $student_diem1 = addslashes($student_diem1);
+    $student_diem2 = addslashes($student_diem2);
+    $student_diemtong = addslashes($student_diemtong);
+    $student_xeploai = addslashes($student_xeploai);
+    // Câu truy sửa
+    $sql = "
+            UPDATE thongtin_sinhvien SET
+            sv_name = '$student_name',
+            sv_sex = '$student_sex',
+            sv_birthday = '$student_birthday',
+            sv_diem1 = '$student_diem1',
+            sv_diem2 = '$student_diem2',
+            sv_diemtong = '$student_diemtong',
+            sv_xeploai = '$student_xeploai'
+            WHERE sv_id = $student_id
+    ";
+
+    // Thực hiện câu truy vấn
+    $query = mysqli_query($conn, $sql);
+
+    return $query;
+}
 
 
 // Hàm xóa sinh viên

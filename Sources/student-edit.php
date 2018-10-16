@@ -84,5 +84,4 @@ disconnect_db();
             </table>
         </form>
       </div>
-    </body>
-</html>
+<?php include_once 'admin-footer.php'; ?>
