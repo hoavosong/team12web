@@ -12,7 +12,7 @@
     <div id="menu">
       <ul>
         <li><a href="admin-index.php"><b>Trang Chủ</b></a></li>
-        <li style="margin-left:30px">
+        <li style="margin-left:1.5%">
         <div class="dropdown">
           <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="background:rgb(96, 166, 114)"><strong>Danh Sách Sinh Viên
     <span class="caret"></span></strong></button>
