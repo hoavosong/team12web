@@ -46,7 +46,6 @@ if (!empty($_POST['edit_student_statistics']))
 
 disconnect_db();
 ?>
-
 <title>Sửa Thống Kê Sinh Viên - 58HT</title>
 <?php include_once 'admin-header.php'; ?>
 
@@ -124,10 +123,6 @@ disconnect_db();
           <?php if (!empty($errors['sv_xeploai'])) echo $errors['sv_xeploai']; ?>
         </td>
       </tr>
-
-
-
-
       <tr>
         <td></td>
         <td>
